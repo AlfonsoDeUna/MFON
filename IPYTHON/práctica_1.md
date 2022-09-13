@@ -47,7 +47,7 @@ decorate(xlabel = ' Tiempo (sg)')
 ### Ejercicios
 
 1. Crea una señal sinSignal con una frecuencia de 880Hz y 1.0 de amplitud de señal. Pon el nombre de variable sin_sig
-2. Dibúja y visualiza la nueva señal
+2. Dibuja y visualiza la nueva señal
 3. Crea una señal grave de 100Hz otra señal de 1000Hz y otra señal de 3000Hz, utliza las variables grave, media y aguda para las tres señales
 4. Visualiza las diferentes señales.
 5. Crea otra señal de 880Hz de amplitud 2 cuyo nombre de variable sea sig_amp2
