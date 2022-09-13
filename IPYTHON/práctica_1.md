@@ -1,6 +1,8 @@
 # PRÁCTICA 1 THINKDSP
 
-En esta práctica comenzaremos creando señales para entender sus propiedades
+En esta práctica comenzaremos creando señales para entender sus propiedades. Conceptos de señales periódicas puras, complejas, visualización en el tiempo de las señales, visualización de la señal en el espectro, escuchar y digitalizar señales.
+
+Herrameinta: Google Colab
 
 
 ## Comenzamos con la importación de la librería
