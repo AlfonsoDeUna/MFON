@@ -14,7 +14,7 @@ if not os.path.exists('thinkdsp.py'):
 ```  
 VAMOS A GENERAR UNA SEÑAL
 
-Para generar una señal tenemos que utilizar o bien la función cosSignal o bien sinSignal que genera una señal periódica pura. La diferencia entre ambas es que una está desplazada sobre el eje del tiempo. Pero generan la misma señal pura.
+Para generar una señal tenemos que utilizar o bien la función *cosSignal* o bien *sinSignal* que genera una señal periódica pura. La diferencia entre ambas es que una está desplazada sobre el eje del tiempo. Pero generan la misma señal pura.
 
 Para generar una señal necesitamos configurar dos parámetros muy importantes:
 * La frecuencia freq=440 significa que creamos una señal de 440Hz, si ponemos freq=1000 significa que creamos una señal de 1000Hz o 1KHZ (kiloHerzio).
@@ -73,7 +73,7 @@ suma_sig = sin_sig + cos_sig
 
 ## GENERA EL SONIDO DE LAS SEÑALES
 
-Ahora vas a aprender mediante el código Python y ThinkDSP a crear el sonido de las señales que has creado para ello necesitamos utilizar una serie de funciones que digitalizan la señal a una señal discreta o digital. Aunque no lo vamos a ver en este tema, a esto se le denomina muestreo de la señal original para crear una señal digital y poder procesarla en el ordenador. Los paramétros que son
+Ahora vas a aprender mediante el código Python y ThinkDSP a crear el sonido de las señales que has creado, para ello necesitamos utilizar una serie de funciones que digitalizan la señal a una señal discreta o digital. Aunque no lo vamos a ver en este tema, a esto se le denomina *muestreo* de la señal original para crear una señal digital y poder procesarla en el ordenador. Los paramétros que son
 * duration = 0.5 indica el tiempo en segundos que vamos a crear
 * start=0 desde que punto empieza, en concreto, desde el comienzo
 * framerate indica la calidad digital cuanto mayor sea el número será una señal que sonorá mejor. con 11025 será suficiente.
