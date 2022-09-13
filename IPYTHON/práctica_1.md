@@ -21,7 +21,7 @@ Para generar una señal necesitamos configurar dos parámetros muy importantes:
 * La amplitud amp=1.0 , sería el máximo volumen al que podemos escuchar ese sonido  o la potencia, o intensidad del sonido y 0 sería lo mínimo.
 
 **Atención!!!** cos_sig --> Es donde se guarda dentro del ordenador la señal que genera, que lo guarda en memoria RAM del ordenador y a partir de este momento 
-tenemos que utilizar esa nombre (variable) que se denomina cos_sig. Ese nombre es inventado, puedes inventarte el nombre que quieras para guardar la informaicón en el
+tenemos que utilizar esa nombre (variable) que se denomina cos_sig. Ese nombre es inventado, puedes inventarte el nombre que quieras para guardar la información en el
 ordenador.
 
 ```
