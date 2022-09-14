@@ -39,6 +39,7 @@ Para visualizarla necesitamos utilizar la función plot() que pinta la señal.
 muestra como se visualiza la señal en el tiempo.
 
 ```
+from thinkdsp import decorate
 cos_sig.plot()
 decorate(xlabel = ' Tiempo (sg)')
 
