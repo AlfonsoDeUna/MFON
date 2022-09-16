@@ -7,7 +7,7 @@ Herrameinta: Google Colab
 
 ## Comenzamos con la importación de la librería
 
-```
+```python
 import os
 
 if not os.path.exists('thinkdsp.py'):
@@ -26,7 +26,7 @@ Para generar una señal necesitamos configurar dos parámetros muy importantes:
 tenemos que utilizar esa nombre (variable) que se denomina cos_sig. Ese nombre es inventado, puedes inventarte el nombre que quieras para guardar la información en el
 ordenador.
 
-```
+```python
 from thinkdsp import CosSignal, SinSignal
 
 cos_sig = CosSignal(freq=440, amp=1.0, offset=0)
@@ -38,7 +38,7 @@ Para visualizarla necesitamos utilizar la función plot() que pinta la señal.
 **Nota:** decorate (xlabel = ' Tiempo (sg)') simplemente muestra en el eje X de la gráfica de la señal el texto: Tiempo (sg) para indicar que el eje X
 muestra como se visualiza la señal en el tiempo.
 
-```
+```python
 from thinkdsp import decorate
 cos_sig.plot()
 decorate(xlabel = ' Tiempo (sg)')
@@ -62,7 +62,7 @@ Si sumamos dos señales estamos creando una señal resultado de dos o más frenc
 
 copia este código que suma dos señales que hemos creado en el apartado anterior, para ellos simplemente hay que llamar al nombre de las variables donde hemos generado las señales y sumarlas como se muestra a continuación: Utilizamos una nueva variable que llamaremos suma_sig
 
-```
+```python
 
 suma_sig = sin_sig + cos_sig
 
@@ -85,7 +85,7 @@ Y utilizaremos la función Audio para poder escuchar esa señal digitalizada
 
 Crea un bloque de código y copia el siguiente código:
 
-```
+```python
 wave = sin_sig.make_wave (duration=0.5, start=0, framerate=11025)
 
 from Ipython.display import Audio
@@ -100,3 +100,23 @@ audio
 cos_sig, sin_sig, grave, medio, bajo, sig_amp2, suma_sig, suma_sig2
 
 2. Y explica la diferencia que escuchas en cada una de ellas.
+
+## GENERAR EL ESPECTRO DE UNA SEÑAL
+
+El espectro es otra respresentación de una onda periódica o señal pero en el dominio de la frecuencia, hasta ahora lo hemos visualizado en el dominio del tiempo.
+De esta nueva forma, somos capaces de visualizar la frecuencia o frecuencias que está compuesta la señal.
+
+Partimos del código anterior donde hemos generado la onda con make_wave y generamos una variable ( con el nombre que queramos que era en el ejemplo wave)
+
+Cada vez que quieras escuchar o visualizar el espectro primero generaras la onda con make_wave y después con el siguiente código generas la representación en el espectro y con plot lo visualizas
+
+plot(high=1000) significa que vaya el eje-y de 1000 en 1000 en su escala.
+
+```python
+  spectrum_mix = wave.make_spectrum()
+  spectrum_mix.plot(high=1000)
+```
+
+### Ejercicios
+
+Genera el gráfico del espectro de las señales que hemos trabajado y en especial de las señal que realizamos la suma de dos.
