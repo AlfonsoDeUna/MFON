@@ -88,7 +88,7 @@ Crea un bloque de código y copia el siguiente código:
 ```python
 wave = sin_sig.make_wave (duration=0.5, start=0, framerate=11025)
 
-from Ipython.display import Audio
+from IPython.display import Audio
 audio = Audio (data=wave.ys, rate=wave.framerate)
 audio
 
